@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSQ-40 - Questionário de Mecanismos de Defesa</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>DSQ-40</h1>
+      <p>Avaliação dos Mecanismos de Defesa Psicológica</p>
+    </header>
+
+    <main>
+      <form id="dsqForm">
+        <fieldset>
+          <legend>Questionário</legend>
+
+          <!-- Geração dinâmica das 40 perguntas -->
+          <div id="questions">
+            <!-- As perguntas serão inseridas dinamicamente via JS para melhor organização -->
+          </div>
+
+        </fieldset>
+        <button type="submit">Ver Resultados</button>
+      </form>
+
+      <!-- Seção de Resultados -->
+      <section id="results" class="hidden">
+        <h2>Seus Resultados</h2>
+        <div id="factors">
+          <canvas id="radarChart"></canvas>
+        </div>
+        <div id="defenses"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
