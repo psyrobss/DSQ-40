@@ -3,241 +3,241 @@ document.addEventListener('DOMContentLoaded', () => {
     const questions = [
       {
         id: "q1",
-        text: "Eu fico satisfeito em ajudar os outros e, se eu não puder fazer isto, eu fico deprimido.",
+        text: "1. Eu fico satisfeito em ajudar os outros e, se eu não puder fazer isto, eu fico deprimido.",
         defense: "Pseudo-Altruísmo",
         factor: "neurótico"
       },
       {
         id: "q2",
-        text: "Eu consigo não me preocupar com um problema até que eu tenha tempo para lidar com ele.",
+        text: "2. Eu consigo não me preocupar com um problema até que eu tenha tempo para lidar com ele.",
         defense: "Supressão",
         factor: "maduro"
       },
       {
         id: "q3",
-        text: "Eu alivio a minha ansiedade fazendo coisas construtivas e criativas, como pintura e marcenaria.",
+        text: "3. Eu alivio a minha ansiedade fazendo coisas construtivas e criativas, como pintura e marcenaria.",
         defense: "Sublimação",
         factor: "maduro"
       },
       {
         id: "q4",
-        text: "Eu sou capaz de achar bons motivos para tudo que eu faço.",
+        text: "4. Eu sou capaz de achar bons motivos para tudo que eu faço.",
         defense: "Racionalização",
         factor: "imaturo"
       },
       {
         id: "q5",
-        text: "Eu sou capaz de rir de mim mesmo com bastante facilidade.",
+        text: "5. Eu sou capaz de rir de mim mesmo com bastante facilidade.",
         defense: "Humor",
         factor: "maduro"
       },
       {
         id: "q6",
-        text: "As pessoas tendem a me tratar mal.",
+        text: "6. As pessoas tendem a me tratar mal.",
         defense: "Projeção",
         factor: "imaturo"
       },
       {
         id: "q7",
-        text: "Se alguém me assalta e rouba o meu dinheiro, eu prefiro que esta pessoa seja ajudada em vez de punida.",
+        text: "7. Se alguém me assalta e rouba o meu dinheiro, eu prefiro que esta pessoa seja ajudada em vez de punida.",
         defense: "Formação Reativa",
         factor: "neurótico"
       },
       {
         id: "q8",
-        text: "As pessoas dizem que eu costumo ignorar os fatos desagradáveis como se eles não existissem.",
+        text: "8. As pessoas dizem que eu costumo ignorar os fatos desagradáveis como se eles não existissem.",
         defense: "Negação",
         factor: "imaturo"
       },
       {
         id: "q9",
-        text: "Eu costumo ignorar o perigo como se eu fosse o Super-homem.",
+        text: "9. Eu costumo ignorar o perigo como se eu fosse o Super-homem.",
         defense: "Dissociação",
         factor: "imaturo"
       },
       {
         id: "q10",
-        text: "Eu me orgulho da minha capacidade de reduzir as pessoas aos seus devidos lugares.",
+        text: "10. Eu me orgulho da minha capacidade de reduzir as pessoas aos seus devidos lugares.",
         defense: "Desvalorização",
         factor: "imaturo"
       },
       {
         id: "q11",
-        text: "Eu frequentemente ajo impulsivamente quando alguma coisa está me incomodando.",
+        text: "11. Eu frequentemente ajo impulsivamente quando alguma coisa está me incomodando.",
         defense: "Atuação",
         factor: "imaturo"
       },
       {
         id: "q12",
-        text: "Eu fico fisicamente doente quando as coisas não estão indo bem para mim.",
+        text: "12. Eu fico fisicamente doente quando as coisas não estão indo bem para mim.",
         defense: "Somatização",
         factor: "imaturo"
       },
       {
         id: "q13",
-        text: "Eu sou uma pessoa muito inibida.",
+        text: "13. Eu sou uma pessoa muito inibida.",
         defense: "Desvalorização",
         factor: "imaturo"
       },
       {
         id: "q14",
-        text: "Eu fico mais satisfeito com minhas fantasias do que com a vida real.",
+        text: "14. Eu fico mais satisfeito com minhas fantasias do que com a vida real.",
         defense: "Fantasia",
         factor: "imaturo"
       },
       {
         id: "q15",
-        text: "Eu tenho qualidades especiais que me permitem levar a vida sem problemas.",
+        text: "15. Eu tenho qualidades especiais que me permitem levar a vida sem problemas.",
         defense: "Dissociação",
         factor: "imaturo"
       },
       {
         id: "q16",
-        text: "Há sempre boas razões quando as coisas não dão certo pra mim.",
+        text: "16. Há sempre boas razões quando as coisas não dão certo pra mim.",
         defense: "Racionalização",
         factor: "imaturo"
       },
       {
         id: "q17",
-        text: "Eu resolvo mais as coisas sonhando acordado do que com a vida real.",
+        text: "17. Eu resolvo mais as coisas sonhando acordado do que com a vida real.",
         defense: "Fantasia",
         factor: "imaturo"
       },
       {
         id: "q18",
-        text: "Eu não tenho medo de nada.",
+        text: "18. Eu não tenho medo de nada.",
         defense: "Negação",
         factor: "imaturo"
       },
       {
         id: "q19",
-        text: "Às vezes, eu acho que sou um anjo e, outras vezes, acho que sou o demônio.",
+        text: "19. Às vezes, eu acho que sou um anjo e, outras vezes, acho que sou o demônio.",
         defense: "Cisão",
         factor: "imaturo"
       },
       {
         id: "q20",
-        text: "Eu fico francamente agressivo quando sou magoado.",
+        text: "20. Eu fico francamente agressivo quando sou magoado.",
         defense: "Atuação",
         factor: "imaturo"
       },
       {
         id: "q21",
-        text: "Eu sempre acho que alguém que eu conheço é como um anjo da guarda.",
+        text: "21. Eu sempre acho que alguém que eu conheço é como um anjo da guarda.",
         defense: "Idealização",
         factor: "neurótico"
       },
       {
         id: "q22",
-        text: "Tanto quanto eu sei, ou as pessoas são boas ou más.",
+        text: "22. Tanto quanto eu sei, ou as pessoas são boas ou más.",
         defense: "Cisão",
         factor: "imaturo"
       },
       {
         id: "q23",
-        text: "Se o meu chefe me repreendesse, eu poderia cometer um erro ou trabalhar mais devagar só para me vingar dele.",
+        text: "23. Se o meu chefe me repreendesse, eu poderia cometer um erro ou trabalhar mais devagar só para me vingar dele.",
         defense: "Agressão Passiva",
         factor: "imaturo"
       },
       {
         id: "q24",
-        text: "Eu conheço alguém que é capaz de ser justo e imparcial em qualquer coisa que faça.",
+        text: "24. Eu conheço alguém que é capaz de ser justo e imparcial em qualquer coisa que faça.",
         defense: "Idealização",
         factor: "neurótico"
       },
       {
         id: "q25",
-        text: "Eu posso controlar os meus sentimentos se eles interferirem no que eu estiver fazendo.",
+        text: "25. Eu posso controlar os meus sentimentos se eles interferirem no que eu estiver fazendo.",
         defense: "Supressão",
         factor: "maduro"
       },
       {
         id: "q26",
-        text: "Eu frequentemente sou capaz de ver o lado engraçado de uma situação apesar de ela ser desagradável.",
+        text: "26. Eu frequentemente sou capaz de ver o lado engraçado de uma situação apesar de ela ser desagradável.",
         defense: "Humor",
         factor: "maduro"
       },
       {
         id: "q27",
-        text: "Eu sinto dor de cabeça quando tenho que fazer algo que não gosto.",
+        text: "27. Eu sinto dor de cabeça quando tenho que fazer algo que não gosto.",
         defense: "Somatização",
         factor: "imaturo"
       },
       {
         id: "q28",
-        text: "Eu frequentemente me vejo sendo muito simpático com pessoas com quem, pelo certo, eu deveria estar muito irritado.",
+        text: "28. Eu frequentemente me vejo sendo muito simpático com pessoas com quem, pelo certo, eu deveria estar muito irritado.",
         defense: "Formação Reativa",
         factor: "neurótico"
       },
       {
         id: "q29",
-        text: "Eu tenho certeza de que a vida é injusta comigo.",
+        text: "29. Eu tenho certeza de que a vida é injusta comigo.",
         defense: "Projeção",
         factor: "imaturo"
       },
       {
         id: "q30",
-        text: "Quando eu sei que vou ter que enfrentar uma situação difícil, eu tento imaginar como isso será e planejo um jeito de lidar com a situação.",
+        text: "30. Quando eu sei que vou ter que enfrentar uma situação difícil, eu tento imaginar como isso será e planejo um jeito de lidar com a situação.",
         defense: "Antecipação",
         factor: "maduro"
       },
       {
         id: "q31",
-        text: "Os médicos nunca realmente entendem o que há de errado comigo.",
+        text: "31. Os médicos nunca realmente entendem o que há de errado comigo.",
         defense: "Deslocamento",
         factor: "imaturo"
       },
       {
         id: "q32",
-        text: "Depois de lutar pelos meus direitos, eu tenho a tendência de me desculpar por ter sido tão firme.",
+        text: "32. Depois de lutar pelos meus direitos, eu tenho a tendência de me desculpar por ter sido tão firme.",
         defense: "Anulação",
         factor: "neurótico"
       },
       {
         id: "q33",
-        text: "Quando eu estou deprimido ou ansioso, comer faz com que eu me sinta melhor.",
+        text: "33. Quando eu estou deprimido ou ansioso, comer faz com que eu me sinta melhor.",
         defense: "Deslocamento",
         factor: "imaturo"
       },
       {
         id: "q34",
-        text: "Frequentemente me dizem que eu não mostro os meus sentimentos.",
+        text: "34. Frequentemente me dizem que eu não mostro os meus sentimentos.",
         defense: "Isolamento",
         factor: "imaturo"
       },
       {
         id: "q35",
-        text: "Se eu puder saber com antecedência que vou ficar triste mais adiante, eu poderei lidar melhor com a situação.",
+        text: "35. Se eu puder saber com antecedência que vou ficar triste mais adiante, eu poderei lidar melhor com a situação.",
         defense: "Antecipação",
         factor: "maduro"
       },
       {
         id: "q36",
-        text: "Não importa o quanto eu reclame, eu nunca consigo uma resposta satisfatória.",
+        text: "36. Não importa o quanto eu reclame, eu nunca consigo uma resposta satisfatória.",
         defense: "Agressão Passiva",
         factor: "imaturo"
       },
       {
         id: "q37",
-        text: "Frequentemente eu me dou conta de que eu não sinto nada em situações que deveriam me despertar fortes emoções.",
+        text: "37. Frequentemente eu me dou conta de que eu não sinto nada em situações que deveriam me despertar fortes emoções.",
         defense: "Isolamento",
         factor: "imaturo"
       },
       {
         id: "q38",
-        text: "Manter-me muito ocupado evita que eu me sinta deprimido ou ansioso.",
+        text: "38. Manter-me muito ocupado evita que eu me sinta deprimido ou ansioso.",
         defense: "Sublimação",
         factor: "maduro"
       },
       {
         id: "q39",
-        text: "Se eu estivesse passando por uma crise, eu me aproximaria de pessoas que tivessem o mesmo problema.",
+        text: "39. Se eu estivesse passando por uma crise, eu me aproximaria de pessoas que tivessem o mesmo problema.",
         defense: "Pseudo-Altruísmo",
         factor: "neurótico"
       },
       {
         id: "q40",
-        text: "Se eu tenho um pensamento agressivo, eu sinto a necessidade de fazer algo para compensá-lo.",
+        text: "40. Se eu tenho um pensamento agressivo, eu sinto a necessidade de fazer algo para compensá-lo.",
         defense: "Anulação",
         factor: "neurótico"
       }

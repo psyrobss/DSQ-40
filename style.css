@@ -61,6 +61,13 @@
     opacity: 0.95;
   }
   
+  .introduction {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.5;
+  } 
+
   /* Formulário */
   form fieldset {
     border: none;
