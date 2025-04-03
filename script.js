@@ -479,7 +479,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
       // Exibe os perfis principais na seção de resultados
       factorsContainer.innerHTML = `
-        <h3>Perfis Principais</h3>
+        <h3>Perfis de Defesa Principais</h3>
         ${Object.entries(factorsPercentage).map(([factor, value]) => `
           <div class="factor-item">
             <div class="factor-header">
@@ -518,7 +518,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
   
       // Monta o HTML para as defesas agrupadas por categoria
-      let defensesHtml = `<h3>Defesas por Categoria</h3>`;
+      let defensesHtml = `<h3>Mecanismos de Defesa por Categoria</h3>`;
       
       // Para cada grupo de fator (maduro, neurótico, imaturo)
       Object.entries(defenseGroups).forEach(([factor, defenses]) => {
